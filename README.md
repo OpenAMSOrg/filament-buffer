@@ -26,7 +26,8 @@ This is a work in progress, so please check back often for updates.
 
 ## STLs
 
-Print the following STLs:\
+Print the following STLs:
+
 [Buffer Slider](STLs/rev1.0/buffer-slider.stl)\
 [Buffer Slider Base](STLs/rev1.0/buffer-slider-base.stl)
 
@@ -35,13 +36,13 @@ If installing standalone, print the following STLs:
 [Front Case](STLs/rev1.0/standalone-front.stl)\
 [Front Cover](STLs/rev1.0/case-cover.stl)
 
-If installing in the rear of a Voron Trident or 2.4, print the following STLs:\
+If installing in the rear of a Voron Trident or 2.4, print the following STLs:
 
 <img src="images/voron-case.png" height="400" alt="Voron">
 
 [Font Case](STLs/rev1.0/voron-case-front.stl)\
 [Rear Case](STLs/rev1.0/voron-case-rear.stl)\
-[Front Cover](STLs/rev1.0/case-cover.stl)\
+[Front Cover](STLs/rev1.0/case-cover.stl)
 
 ## Installed in a Voron 2.4
 
