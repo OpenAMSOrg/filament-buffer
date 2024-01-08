@@ -44,6 +44,25 @@ If installing in the rear of a Voron Trident or 2.4, print the following STLs:
 [Rear Case](STLs/rev1.0/voron-case-rear.stl)\
 [Front Cover](STLs/rev1.0/case-cover.stl)
 
+## Klipper configuration
+Please add the contents of klipper/klippy/extras under the same folder of your klipper source code.
+Also the [config file](stepper_follower.cfg) needs to be added to your klipper config folder and included at the top of your printer.cfg file.
+
+## Macros
+
+The following GCODE commands are enabled, please include these on PRINT_START and PRINT_END, and PRINT_PAUSE and PRINT_RESUME macros:
+
+```ENABLE_STEPPER_FOLLOWER```\
+```DISABLE_STEPPER_FOLLOWER```
+
+It is recommended that during manual filament changes and filament loading, the stepper follower is disabled and the stepper follower extruder is unlached, as to allow the filament to move freely without the stepper follower attempting to maintain pressure on the filament.
+
+For testing, the PID control loop for the follower can be set on the fly using the following command:
+    
+```SET_STEPPER_FOLLOWER_PID KP=<value> KI=<value> KD=<value>```
+
+The config file contains a set of values that seems to work well for most printers, but you can tweak them to your specific needs.
+
 ## Installed in a Voron 2.4
 
 <img src="images/installed.png" height="400" alt="Installed">
