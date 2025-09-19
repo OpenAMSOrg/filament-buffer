@@ -1,8 +1,8 @@
-# OpenAMS filament buffer, filament sensor, and stepper follower (FPS)
+# OpenAMS filament pressure sensor (FPS), rear umbilical, and filament path jointer
 
-![v3.0](/images/v3_0.png)
+![v4.0](/images/v4.0_fps.png)
 
-This repository contains the CAD and STL files for the OpenAMS FPS (filament buffer, filament sensor, and stepper follower). Use these files to adapt an existing AMS/Bambulab filament buffer slide to the OpenAMS system, or to print your own slide and FPS case.
+This repository contains the CAD and STL files for the OpenAMS FPS (filament pressure sensor). Use these files to adapt an existing AMS/Bambulab filament buffer slide to the OpenAMS system, or to print your own slide.
 
 ## Bill of materials (BOM)
 
@@ -14,6 +14,8 @@ If you already have an original Bambulab filament buffer assembly (it contains t
 | M3 heat-set insert (4 mm tall) | 1 |
 | Original Bambulab slide assembly | 1 |
 | FPS board ([si-forge.com](https://si-forge.com)) | 1 |
+| FPS case STL | 1 |
+| FPS bambulab cover STL | 1 |
 
 If you plan to print the slide and parts yourself, use this BOM as a baseline:
 
@@ -24,19 +26,22 @@ If you plan to print the slide and parts yourself, use this BOM as a baseline:
 | ECAS 04 insert | 2 |
 | 5 mm diameter × 15 mm long magnet* | 1 |
 | FPS board ([si-forge.com](https://si-forge.com)) | 1 |
+| FPS case STL | 1 |
+| FPS DIY cover STL | 1 |
 
-*Magnet note: if a single 5×15 mm magnet is hard to source, stacking five 5×3 mm magnets end-to-end is an acceptable alternative. Ensure the stacked magnets are secured in the pocket (epoxy or a light press fit) so they don't shift during filament movement.
+*Magnet note: if a single 5×15 mm magnet is hard to source, stacking five 5×3 mm magnets end-to-end is an acceptable alternative. Ensure the stacked magnets are secured in the pocket (CA glue or a light press fit) so they don't shift during filament movement.
 
 ## Other recommended parts
 
-- PTFE tubing: 3 mm ID / 4 mm OD (standard for many AMS configurations)
+- PTFE tubing: 3 mm ID / 4 mm OD (standard for many MMU configurations to avoid friction)
 - Optional mounting hardware or printed brackets depending on your printer and chosen mounting location
 
 ## Images and CAD
 
 Please check the CAD files and the example images for suggested filament paths and mounting locations.
 
-![filament path](/images/v3_filament_path.png)
+
+![v4.0](/images/v4_0.png)
 
 ## Files provided
 
@@ -52,14 +57,15 @@ The repository and the FPS hardware use a simple version mapping to help you pic
 
 ## Printing and assembly guidance
 
-- Material: PETG or ABS are recommended for parts near heat or for added durability; PLA is usable for prototypes but may soften in warm environments.
+- Material:  ABS is recommended for parts near heat or for added durability; PLA is usable for prototypes but may soften in warm environments. Do NOT print the FPS in anything rough, such as any filament containing glass or carbon fibers.
+
 - Print orientation: print the slide and case so the magnet pocket and heat-set insert holes are printed with clean walls (minimal bridging). Use 100% infill or a high infill around the magnet pocket if you need extra strength.
+
 - Tolerances: the magnet pocket is designed for a press-fit magnet; if your magnets are slightly oversized, sand the pocket carefully. For heat-set inserts, a snug hole size (per insert manufacturer's recommendation) and a controlled installation temperature will give the best result.
-- Securing magnets: use a small dab of epoxy or superglue if you’re stacking smaller magnets.
+- Securing magnets: use a small dab superglue if you’re stacking smaller magnets.
 
 ## Installation notes
 
-- The FPS board connects to your AMS wiring the same way regardless of casing—follow the board silks for pinouts. If you need a wiring diagram included in the repo, open an issue or pull request and I can add one.
 - The FPS case can be installed anywhere along the filament path, but the provided rear-umbilical and adapter plate are designed to integrate into the rear of Voron printers.
 
 ## Contributing
